@@ -45,7 +45,7 @@ app.use(function (req, res, next) {
 
 // Set our application settings based on environment variables or query parameters
 app.use(settings)
-
+console.log('this is test console.').
 // Make data available for our views to consume
 app.use(catchErrors(async function (request, response, next) {
   response.locals.baseUrl = `${request.protocol}://${request.headers.host}`
